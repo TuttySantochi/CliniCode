@@ -1,18 +1,48 @@
 const especialistas = [
-    {nombre: 'Luis Navas', especialidad: 'Css'},
-    {nombre: 'Damaris Palacios', especialidad: 'Html'},
-    {nombre: 'Pablo Marino', especialidad: 'JS'},
-    {nombre: 'Benjamin Cappeta', especialidad: 'React'},
-    {nombre: 'Elon Musk', especialidad: 'Base de Datos'},
-    {nombre: 'Mark Zuckerberg', especialidad: 'Python'},
-    {nombre: 'Pepe Luis', especialidad: 'C++'},
-
+    {id:1 ,nombre: 'Luis Navas', especialidad: 'Css', horario: [{lunes: ["10:00", "12:00",]} , {jueves: ["18:00", "20:00",]} ]},
+    {id:2 ,nombre: 'Damaris Palacios', especialidad: 'Html', horario: [{lunes: ["10:00", "12:00",]} , {martes: ["10:00", "12:00",]} ]},
+    {id:3 ,nombre: 'Pablo Marino', especialidad: 'JS', horario: [{lunes: ["10:00", "12:00",]} , {martes: ["10:00", "12:00",]} ]},
+    {id:4 ,nombre: 'Benjamin Cappeta', especialidad: 'React', horario: [{lunes: ["10:00", "12:00",]} , {martes: ["10:00", "12:00",]} ]},
+    {id:5 ,nombre: 'Elon Musk', especialidad: 'Base de Datos', horario: [{lunes: ["10:00", "12:00",]} , {martes: ["10:00", "12:00",]} ]},
+    {id:6 ,nombre: 'Mark Zuckerberg', especialidad: 'Python', horario: [{lunes: ["10:00", "12:00",]} , {martes: ["10:00", "12:00",]} ]},
+    {id:7 ,nombre: 'Pepe Luis', especialidad: 'C++', horario: [{lunes: ["10:00", "12:00",]} , {martes: ["10:00", "12:00",]} ]}
 ]
+const mostrarHorarios =(id)=>{
+    let horarios = especialistas.filter((es)=>es.id == id)
+    let [usuario] = horarios
+    let dias = [null, null, null, null, null]
+
+    for (let index = 0; index < usuario.horario.length; index++) {
+        if(usuario.horario [index].lunes != undefined){
+            dias[0] = usuario.horario [index].lunes
+        }else if(usuario.horario [index].martes != undefined){
+            dias[1] = usuario.horario [index].martes
+        }else if(usuario.horario [index].miercoles != undefined){
+            dias[2] = usuario.horario [index].miercoles
+        }else if(usuario.horario [index].jueves != undefined){
+            dias[3] = usuario.horario [index].jueves
+        }else if(usuario.horario [index].viernes != undefined){
+            dias[4] = usuario.horario [index].viernes
+        }
+    }
+for (let i = 0; i < dias.length; i++) {
+    if (dias[i] != null ) {
+        if (i==0) {
+            console.log("lunes " + dias[i] );
+
+        }
+    }
+    
+}
+
+} 
+
+
+
 
 const formulario = document.querySelector('#formulario');
 const boton = document.querySelector('#boton');
 const resultado = document.querySelector('#resultado');
-
 //filtrar por especialista
 const filtrar = ()=>{
 
@@ -25,7 +55,9 @@ const filtrar = ()=>{
 
         if(nombre.indexOf(texto) !== -1){
             resultado.innerHTML += `
-            <li>${esp.nombre} - Especialidad: ${esp.especialidad} </li>
+            <li>${esp.nombre} - Especialidad: ${esp.especialidad} <button onclick="mostrarHorarios(${esp.id})" type="button" id="botonHorarios" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Horarios
+            </button> </li>
             `
         }
 
@@ -61,7 +93,9 @@ const filtrar2 = ()=>{
 
         if(especialidad.indexOf(texto) !== -1){
             resultado2.innerHTML += `
-            <li>${esp.especialidad} - Especialista: ${esp.nombre} </li>
+            <li>${esp.especialidad} - Especialista: ${esp.nombre} <button type="button" id="botonHorarios" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Horarios
+            </button></li>
             `
         }
 
