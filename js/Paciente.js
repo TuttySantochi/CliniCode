@@ -1,11 +1,11 @@
 const especialistas = [
-    {id:1 ,nombre: 'Luis Navas', especialidad: 'Css', horario: [{lunes: ["10:00", "12:00","16:00", "18:00",]} , {martes: ["18:00", "20:00",]} , {miercoles: ["10:00", "12:00" , "18:00", "20:00",]} , {jueves: ["18:00", "20:00",]}, {viernes: ["10:00", "12:00" ,"16:00", "18:00",]} ]},
-    {id:2 ,nombre: 'Damaris Palacios', especialidad: 'Html', horario: [{lunes: ["10:30", "12:30",]} , {martes: ["09:00", "11:00", "15:00", "17:00",]}, {miercoles: ["18:30", "20:30",]} , {jueves: ["09:00", "11:00", "18:00", "20:00",]}, {viernes: ["18:00", "20:00",]} ]},
-    {id:3 ,nombre: 'Pablo Marino', especialidad: 'JS', horario: [{lunes: ["10:00", "12:00",]} , {martes: ["10:00", "12:00","15:00", "17:00"]} , {miercoles: ["18:00", "20:00",]} , {jueves: ["10:00", "12:00" , "15:00", "17:00",]}, {viernes: ["18:00"]} ]},
-    {id:4 ,nombre: 'Benjamin Cappeta', especialidad: 'React', horario: [{lunes: ["18:00", "20:00",]} , {martes: ["17:30", "19:30",]} , {miercoles: ["18:00", "20:00",]} , {jueves: ["17:30", "19:30",]}, {viernes: ["18:00", "20:00",]} ]},
-    {id:5 ,nombre: 'Elon Musk', especialidad: 'Base de Datos', horario: [{lunes: ["09:00", "11:00", "13:00"]} , {martes: ["09:00", "11:00", "13:00"]} , {miercoles: ["09:00", "11:00", "13:00" ,"18:00", "20:00",]} , {jueves: ["18:00", "20:00",]}, {viernes: ["09:00", "11:00", "13:00", "18:00", "20:00",]}]},
-    {id:6 ,nombre: 'Mark Zuckerberg', especialidad: 'Python', horario: [{lunes: ["10:00", "12:00", "16:00", "18:00"]} , {martes: ["10:00", "12:00",]} , {miercoles: ["10:00", "12:00", "18:00", "20:00",]} , {jueves: ["19:00", "21:00",]}, {viernes: ["10:00", "12:00" , "18:00", "20:00",]}]},
-    {id:7 ,nombre: 'Pepe Luis', especialidad: 'C++', horario: [{lunes: ["10:00", "12:00","15:00", "17:00"]} , {martes: ["10:00", "12:00",]} , {miercoles: ["10:00", "12:00", "15:00", "17:00",]} , {jueves: ["10:00", "12:00"]}, {viernes: ["10:00", "12:00", "15:00", "17:00",]}]}
+    {id:1 ,nombre: 'Luis Navas', especialidad: 'Css', horario: [{lunes: [" 10:00 " , " 12:00 " ," 16:00 " , " 18:00 " ,]} , {martes: [" 18:00 " , " 20:00 " ,]} , {miercoles: [" 10:00  " , " 12:00 "  , " 18:00 " , " 20:00 " ,]} , {jueves: [" 18:00 " , " 20:00 " ,]}, {viernes: [" 10:00 " , " 12:00"  ," 16:00 " , " 18:00" ,]} ]},
+    {id:2 ,nombre: 'Damaris Palacios', especialidad: 'Html', horario: [{lunes: [" 10:30 " , " 12:30 " ,]} , {martes: [" 09:00 " , " 11:00 " , " 15:00 " , " 17:00 " ,]}, {miercoles: [" 18:30 " , " 20:30 " ,]} , {jueves: [" 09:00 " , " 11:00 " , " 18:00 " , " 20:00 " ,]}, {viernes: [" 18:00 " , " 20:00 " ,]} ]},
+    {id:3 ,nombre: 'Pablo Marino', especialidad: 'JS', horario: [{lunes: [" 10:00 " , " 12:00 " ,]} , {martes: [" 10:00 " , " 12:00 " ," 15:00 " , " 17:00 " ]} , {miercoles: [" 18:00 " , " 20:00 " ,]} , {jueves: [" 10:00 " , " 12:00 "  , " 15:00 " , " 17:00 " ,]}, {viernes: [" 18:00 " ]} ]},
+    {id:4 ,nombre: 'Benjamin Cappeta', especialidad: 'React', horario: [{lunes: [" 18:00 " , " 20:00 " ,]} , {martes: [" 17:30 " , " 19:30 " ,]} , {miercoles: [" 18:00 " , " 20:00 " ,]} , {jueves: [" 17:30 " , " 19:30 " ,]}, {viernes: [" 18:00 " , " 20:00 " ,]} ]},
+    {id:5 ,nombre: 'Elon Musk', especialidad: 'Base de Datos', horario: [{lunes: [" 09:00 " , " 11:00 " , " 13:00 " ]} , {martes: [" 09:00 " , " 11:00 " , " 13:00 " ]} , {miercoles: [" 09:00 " , " 11:00 " , " 13:00 "  ," 18:00 " , " 20:00 " ,]} , {jueves: [" 18:00 " , " 20:00 " ,]}, {viernes: [" 09:00 " , " 11:00 " , " 13:00 " , " 18:00 " , " 20:00 " ,]}]},
+    {id:6 ,nombre: 'Mark Zuckerberg', especialidad: 'Python', horario: [{lunes: [" 10:00 " , " 12:00 " , " 16:00 " , " 18:00 " ]} , {martes: [" 10:00 " , " 12:00 " ,]} , {miercoles: [" 10:00 " , " 12:00 " , " 18:00 " , " 20:00 " ,]} , {jueves: [" 19:00 " , " 21:00 " ,]}, {viernes: [" 10:00 " , " 12:00 "  , " 18:00 " , " 20:00 " ,]}]},
+    {id:7 ,nombre: 'Pepe Luis', especialidad: 'C++', horario: [{lunes: [" 10:00 " , " 12:00 " ," 15:00 " , " 17:00 " ]} , {martes: [" 10:00 " , " 12:00 " ,]} , {miercoles: [" 10:00 " , " 12:00 " , " 15:00 " , " 17:00 " ,]} , {jueves: [" 10:00 " , " 12:00 "]}, {viernes: [" 10:00 ", " 12:00 ", " 15:00 ", " 17:00 ",]}]}
 ]
 const mostrarHorarios =(id)=>{
     let horarios = especialistas.filter((es)=>es.id == id)
@@ -27,8 +27,10 @@ const mostrarHorarios =(id)=>{
     }
 const listaHorarios = document.querySelector('#listaHorarios');   
 for (let i = 0; i < dias.length; i++) {
+    
     if (dias[i] != null ) {
         if (i==0) {
+            listaHorarios.innerHTML+=`   `
             listaHorarios.innerHTML+=`
             <li> Lunes: ${dias[i]}</li>
             `
@@ -48,11 +50,11 @@ for (let i = 0; i < dias.length; i++) {
             listaHorarios.innerHTML+=`
             <li> Viernes: ${dias[i]}</li>
             `
-        } else{
-            listaHorarios.innerHTML+=`
-            <li> No hay horarios disponibles en este momento...</li>
-            `
-        }
+        } 
+    }else{
+        listaHorarios.innerHTML+=`
+        <li> No hay horarios disponibles en este momento...</li>
+        `
     }
     
 }
