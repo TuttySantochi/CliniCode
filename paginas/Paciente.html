@@ -19,111 +19,110 @@
     <button class="btn btn-info mb-2" id="boton">Buscar</button>
     <ul id="resultado">
     </ul>
-<!-- Boton para ver horarios -->
-  
+    <!-- Boton para ver horarios -->
 
-</div>
+  </div>
 
-<div class="container mt-5">
-  
-    <h1>Buscar por Tema!</h1>
-    <input type="text" id="formulario2" class="form-control my-2 ">
-    <button class="btn btn-info mb-2" id="boton2">Buscar</button>
-    <ul id="resultado2">
-    </ul>
+  <div class="container mt-5">
+    
+      <h1>Buscar por Tema!</h1>
+      <input type="text" id="formulario2" class="form-control my-2 ">
+      <button class="btn btn-info mb-2" id="boton2">Buscar</button>
+      <ul id="resultado2">
+      </ul>
 
-  <!-- Boton para ver horarios -->
-  <button type="button" id="botonHorarios" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Horarios
+    <!-- Boton para ver horarios -->
+    <button type="button" id="botonHorarios" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Horarios
+    </button>
+
+  </div>
+
+
+
+  <!-- Modal horarios-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Estos son los turnos disponibles:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="mostrarHorario"></ul>
+        <!--<ul>
+            <li>Lunes:</li>
+            <li>Martes:</li>
+            <li>Miercoles:</li>
+            <li>Jueves:</li>
+            <li>Viernes:</li>
+            <li>Sábado:</li>
+            <li>Domingo:</li>
+          </ul>--> 
+          
+          <div class="nuevoevento-wrapper">
+            <div class="nuevoevento-header">
+              <div class="titulo">Solicitar Consulta</div>
+              <i class="cerrar">X</i>
+            </div>
+            <div class="nuevoevento-body">
+              <div class="nuevoevento-input">
+                <input type="text" placeholder="título" class="nombreevento" />
+              </div>
+              <div class="nuevoevento-input">
+                <input
+                  type="text"
+                  placeholder="Breve descripción"
+                  class="consultaevento"
+                />
+              </div>
+              </div>
+            <div class="nuevoevento-footer">
+              <button class="nuevoevento-btn">Solicitar</button>
+            </div>
+          </div>
+          </div>
+          <button class="nuevoevento">
+          <i>+</i>
+          </button>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--boton solicitud de turno!
+  <div class="nuevoevento-wrapper">
+    <div class="nuevoevento-header">
+      <div class="titulo">Solicitar Consulta</div>
+      <i class="cerrar">X</i>
+    </div>
+    <div class="nuevoevento-body">
+      <div class="nuevoevento-input">
+        <input type="text" placeholder="título" class="nombreevento" />
+      </div>
+      <div class="nuevoevento-input">
+        <input
+          type="text"
+          placeholder="Breve descripción"
+          class="consultaevento"
+        />
+      </div>
+      </div>
+    <div class="nuevoevento-footer">
+      <button class="nuevoevento-btn">Solicitar</button>
+    </div>
+  </div>
+  </div>
+  <button class="nuevoevento">
+  <i>+</i>
   </button>
-
-</div>
-
-
-
-<!-- Modal horarios-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Estos son los turnos disponibles:</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <ul class="mostrarHorario"></ul>
-       <!--<ul>
-          <li>Lunes:</li>
-          <li>Martes:</li>
-          <li>Miercoles:</li>
-          <li>Jueves:</li>
-          <li>Viernes:</li>
-          <li>Sábado:</li>
-          <li>Domingo:</li>
-        </ul>--> 
-        
-        <div class="nuevoevento-wrapper">
-          <div class="nuevoevento-header">
-            <div class="titulo">Solicitar Consulta</div>
-            <i class="cerrar">X</i>
-          </div>
-          <div class="nuevoevento-body">
-            <div class="nuevoevento-input">
-              <input type="text" placeholder="título" class="nombreevento" />
-            </div>
-            <div class="nuevoevento-input">
-              <input
-                type="text"
-                placeholder="Breve descripción"
-                class="consultaevento"
-              />
-            </div>
-            </div>
-          <div class="nuevoevento-footer">
-            <button class="nuevoevento-btn">Solicitar</button>
-          </div>
-        </div>
-        </div>
-        <button class="nuevoevento">
-        <i>+</i>
-        </button>
-        </div>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--boton solicitud de turno!
-<div class="nuevoevento-wrapper">
-  <div class="nuevoevento-header">
-    <div class="titulo">Solicitar Consulta</div>
-    <i class="cerrar">X</i>
-  </div>
-  <div class="nuevoevento-body">
-    <div class="nuevoevento-input">
-      <input type="text" placeholder="título" class="nombreevento" />
-    </div>
-    <div class="nuevoevento-input">
-      <input
-        type="text"
-        placeholder="Breve descripción"
-        class="consultaevento"
-      />
-    </div>
-    </div>
-  <div class="nuevoevento-footer">
-    <button class="nuevoevento-btn">Solicitar</button>
-  </div>
-</div>
-</div>
-<button class="nuevoevento">
-<i>+</i>
-</button>
-</div>-->
+  </div>-->
 
 </main>
 
