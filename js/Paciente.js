@@ -7,6 +7,15 @@ const especialistas = [
     {id:6 ,nombre: 'Mark Zuckerberg', especialidad: 'Python', horario: [{lunes: [" 10:00 " , " 12:00 " , " 16:00 " , " 18:00 " ]} , {martes: [" 10:00 " , " 12:00 " ,]} , {miercoles: [" 10:00 " , " 12:00 " , " 18:00 " , " 20:00 " ,]} , {jueves: [" 19:00 " , " 21:00 " ,]}, {viernes: [" 10:00 " , " 12:00 "  , " 18:00 " , " 20:00 " ,]}]},
     {id:7 ,nombre: 'Pepe Luis', especialidad: 'C++', horario: [{lunes: [" 10:00 " , " 12:00 " ," 15:00 " , " 17:00 " ]} , {martes: [" 10:00 " , " 12:00 " ,]} , {miercoles: [" 10:00 " , " 12:00 " , " 15:00 " , " 17:00 " ,]} , {jueves: [" 10:00 " , " 12:00 "]}, {viernes: [" 10:00 ", " 12:00 ", " 15:00 ", " 17:00 ",]}]}
 ]
+const crearTurno=(hora)=>{
+console.log(hora);
+//crear turno y agregar la hora
+}
+const makeTurno = (horario)=>{
+    let array = horario.split(",")
+    let element = array.map(h=>`<span onclick="crearTurno('${h}')"> ${h} </span>`)
+    return element
+}
 const mostrarHorarios =(id)=>{
     let horarios = especialistas.filter((es)=>es.id == id)
     let [usuario] = horarios
@@ -26,13 +35,15 @@ const mostrarHorarios =(id)=>{
         }
     }
 const listaHorarios = document.querySelector('#listaHorarios');   
+listaHorarios.innerHTML=`   `
+
 for (let i = 0; i < dias.length; i++) {
     
     if (dias[i] != null ) {
         if (i==0) {
-            listaHorarios.innerHTML+=`   `
+            let h = makeTurno(`${dias[i]}`);
             listaHorarios.innerHTML+=`
-            <li> Lunes: ${dias[i]}</li>
+            <li onclick="" id="0" > Lunes: ${h}  </li>
             `
         } else if (i==1) {
             listaHorarios.innerHTML+=`
