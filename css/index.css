@@ -1,0 +1,378 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(20, 12, 22);
+    font-size: 18px !important;
+    background: linear-gradient(to right, rgba(202, 67, 173, 0.966), rgba(245, 221, 252, 0.76));
+}
+
+
+#logo{
+    width: 183px;
+    font-weight: 600;
+}
+
+#logo_footer{
+    width: 180px;
+    margin-top: 11%;
+}
+
+.menu .navbar{
+    background: rgba(48, 12, 59, 0.993) !important;
+    /* cursor: pointer !important; */
+}
+
+.menu{
+    position: fixed !important;
+    width: 100vw;
+    z-index: 1;
+    top: 0px;
+}
+
+h2{
+    font-weight: 600;
+    text-align: center;
+    margin: 8%;
+}
+
+.search_tittle{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    /*padding-top: 10%;/*10% queda perfecto
+    padding-left: 7%;
+    padding-right: 7%;*/
+}
+
+#resultado, #resultado2{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+ul, li{
+    list-style: none;
+}
+
+#botonHorarios{
+    height: 3%;
+}
+
+/*=========================================*/
+/*figure{
+    width: 100%;
+    background-color: blue;
+}
+
+#programmer_photo{
+    width: 100%;
+}*/
+
+.section_one{
+    height:100vh;
+    width: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    background-image: url("../img/software-developer-6521720_1280.jpg");
+    margin-top: 114px;
+}
+
+.container .cover{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(2px) !important;/************CAMBIAR Y ARREGLAR**************/
+}
+
+/*form{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    /*flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*/
+
+article{
+    height:60vh;/*100vh*/
+    width: 100%;
+}
+
+.icons{
+    width: 50px;
+}
+
+h3{
+    font-size: xx-large;
+    font-weight: 500;
+    color: rgb(44, 10, 37);
+}
+
+p{
+    margin-top: 6%;
+    margin-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.icons, h3{
+    display: inline !important;
+    margin: 1.5%;
+}
+
+.form-control{
+    width: 40% !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 15px;/*===========16*/
+    color: rgb(44, 12, 42);
+    /*padding-left: 10px;*/
+    display: inline;
+}
+
+.btn{
+    background-color: rgba(48, 12, 59, 0.993);
+    color: white;
+    border-color: rgba(48, 12, 59, 0.993);
+}
+.btn:focus{
+    text-decoration: none;
+}
+.btn:hover{
+    color: white !important;
+    background: rgba(70, 19, 80, 0.89);
+    border-color: rgb(70, 19, 80);
+    transition: 1s ease;
+}
+
+/*==================FOOTER=======================*/
+footer{
+    height: 250px;
+    background-color: rgb(48, 12, 59);
+    width: 100%;
+    bottom: 0px;
+    margin-top: 8%;
+    /* position: fixed; */
+}
+
+footer h5{
+    color: rgb(248, 218, 255);
+    font-size: 19px !important;
+    font-weight: 500 !important;
+}
+
+footer .texto-pie{
+    color: rgb(248, 218, 255);
+    font-size: 13.5px;
+    /*margin-top: px !important;*/
+}
+
+footer ul{
+    list-style: none !important;
+    margin-bottom: 2px !important;
+    
+}
+
+footer li{
+    margin-bottom: 1vh;
+    text-align: center !important;
+}
+
+footer a{
+    text-decoration: none; 
+}
+
+footer a:hover , footer a:focus{
+    color: rgb(221, 144, 236);
+    transition: .3s ease-in-out;
+}
+
+footer p{
+    color: rgb(248, 218, 255);
+    margin-top: 7%;
+}
+
+.footer .icon i{
+    font-size: 30px;
+    color: rgb(250, 235, 253);
+    margin-top: 70px;
+}
+
+.social-icons a i{
+    font-size: 24px;
+    color: rgb(248, 218, 255);
+    margin-right: 10px;
+    transition: .5s ease;
+    margin-left: 10px;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+.social-icons a:hover i{
+    transform: scale(1.2);
+}
+
+.footer{
+    /* height: 80px; */
+    background-color: rgb(48, 12, 59); /**/ 
+}
+
+.menu-foot{
+    list-style-type: none;
+}
+/*=====================================================*/
+
+/*==================CSS DE TUTTY (MODAL)===============*/
+
+.nuevoevento-wrapper {
+    position: absolute;    
+    bottom: 100px;
+    left: 80%;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgb(48, 12, 59);
+    transform: translateX(-50%);
+    transition: max-height 0.5s ease;
+  }
+  .nuevoevento-wrapper.active {
+    max-height: 300px;
+  }
+  .nuevoevento-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #cbc0d1;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .nuevoevento-header .cerrar {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .nuevoevento-header .cerrar:hover {
+    color: rgb(244, 227, 250);
+  }
+  .nuevoevento-header .titulo {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .nuevoevento-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+  }
+  .nuevoevento-body .nuevoevento-input {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .nuevoevento-body .nuevoevento-input input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #36203f;
+  }
+  .nuevoevento-body .nuevoevento-input input::placeholder {
+    color: #ffffff;
+  }
+  .nuevoevento-body .nuevoevento-input input:focus {
+    border-bottom: 1px solid rgb(48, 12, 59);
+  }
+  .nuevoevento-body .nuevoevento-input input:focus::placeholder {
+    color: rgb(205, 176, 214);
+  }
+  .nuevoevento-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .nuevoevento-footer .nuevoevento-btn {
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: rgb(48, 12, 59);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid rgb(48, 12, 59);
+  }
+  .nuevoevento-footer .nuevoevento-btn:hover {
+    background-color: transparent;
+    color: rgb(248, 223, 255);
+  }
+  .nuevoevento{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;   
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: rgb(48, 12, 59);
+    border: 2px solid rgb(48, 12, 59);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .nuevoevento i {
+    pointer-events: none;
+  }
+/*====================================================*/
+
+/*===================================================================================*/
+
+@media screen and (min-width: 360px) and (max-width: 640px){ /*(móvil pequeño)*/
+    /*.section_one{
+        
+    }*/
+    .article_one{
+        font-size: small !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px){ /*(ordenador portátil medio)*/
+    /*.section_one{
+        background-image: url("../img/programmer-coding-in-the.jpg");
+    }*/
+    
+}
+@media screen and (min-width: 1080px) and (max-width: 1920px){ /*(escritorio grande)*/
+    /*.section_one{
+        background-image: url("../img/depositphotos_319611122-stock-photo-cropped-close-up-photo-of.jpg");
+    }*/
+}
+@media screen and (min-width: 375px) and (max-width: 667px){ /*(móvil medio)*/
+    /*.section_one{
+        background-image: url("../img/depositphotos_319611122-stock-photo-cropped-close-up-photo-of.jpg");
+    }*/
+}
+@media screen and (min-width: 900px) and (max-width: 1440px){ /*(escritorio medio)*/
+    /*.section_one{
+        background-image: url("../img/depositphotos_319611122-stock-photo-cropped-close-up-photo-of.jpg");
+    }*/
+}
+@media screen and (min-width: 720px) and (max-width: 1280px){ /*(móvil grande)*/
+    /*.section_one{
+        background-image: url("../img/depositphotos_319611122-stock-photo-cropped-close-up-photo-of.jpg");
+    }*/
+}
