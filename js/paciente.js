@@ -43,26 +43,32 @@ DatosConsulta.addEventListener("change", e => {
 })
 
 
-//let form = {};
-//  form.Especialista = SelectEspecialista.value;
-//  form.Fecha = SelectFecha.value;
-//  form.Horario = SelectHorario.value;
-//  form.DatosConsulta = DatosConsulta.value;
-
 const submitFormulario = d.getElementById("submitFormulario");
 
+
 function guardarTurno() {
-	// let f = JSON.stringify(form);
-   // localStorage.setItem('form', f);
+
    let form = {};
 		form.Especialista = SelectEspecialista.value;
 		form.Fecha = SelectFecha.value;
 		form.Horario = SelectHorario.value;
 		form.DatosConsulta = DatosConsulta.value;
-  
-localStorage.setItem("form", JSON.stringify(form))
+
+	let	out = `
+	<p>Especialista: <span>${form.Especialista}</span></p>
+	<p>Fecha: <span>${form.Fecha}</span></p>
+	<p>Horario: <span>${form.Horario}</span></p>
+	<p>Consulta: <span>${form.DatosConsulta}</span></p>
+	`;
+
+	document.querySelector(".out code").innerHTML = out;
+localStorage.setItem("form" , JSON.stringify(form))
 	
 }
+
+
+
+
 
 submitFormulario.addEventListener('click', (e) => {
 	e.preventDefault();

@@ -1,3 +1,17 @@
+.pagina{
+	max-width: 930px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	grid-gap: 100px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+
+
+
+/*
 
 .nuevoevento-wrapper {
     position: absolute;    
@@ -112,4 +126,4 @@
   }
   .nuevoevento i {
     pointer-events: none;
-  }
+  }*/
