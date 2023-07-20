@@ -104,6 +104,14 @@ body:after {
   transition: 1s ease;
 }
 
+.animate__slideInLeft{
+  /*display: inline-block;
+  margin: 0 0.5rem;*/
+
+  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
 /*CARDS==========================*/
 .profile-img{
   width: 150px;
