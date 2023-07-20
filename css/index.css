@@ -130,13 +130,17 @@ label{
     width: 40% !important;
     border: none !important;
     outline: none !important;
-    font-size: 18px;/*===========16*/
+    font-size: 15px;/*===========16*/
     color: rgb(44, 12, 42);
     font-weight: 600;
     margin-bottom: 1%;
     margin-top: 1%;
     /*padding-left: 10px;
     display: inline;*/
+}
+
+option{
+    font-weight: 600;
 }
 
 .btn{
@@ -155,7 +159,7 @@ label{
     transition: 1s ease;
 }
 #submitFormulario{
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 /*==================FOOTER=======================*/
