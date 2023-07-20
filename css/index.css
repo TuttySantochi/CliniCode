@@ -400,7 +400,7 @@ footer p{
         background-color: rgb(48, 12, 59);
         width: 100%;
         bottom: 0px;
-        margin-top: 15%;
+        margin-top: 30%;
         /* position: fixed; */
     }
     .article_one{
@@ -427,7 +427,7 @@ footer p{
         background-color: rgb(48, 12, 59);
         width: 100%;
         bottom: 0px;
-        margin-top: 50%;
+        margin-top: 80% !important;
         /* position: fixed; */
     }
     h3{
