@@ -369,9 +369,17 @@ footer p{
 /*===================================================================================*/
 
 @media screen and (min-width: 360px) and (max-width: 640px){ /*(móvil pequeño)*/
-    /*.section_one{
-        
-    }*/
+    #col_three{
+        padding-bottom: 10%;
+    }
+    footer{
+        height: 250px;
+        background-color: rgb(48, 12, 59);
+        width: 100%;
+        bottom: 0px;
+        margin-top: 15%;
+        /* position: fixed; */
+    }
     .article_one{
         font-size: small !important;
     }
@@ -388,9 +396,20 @@ footer p{
     }*/
 }
 @media screen and (min-width: 375px) and (max-width: 667px){ /*(móvil medio)*/
-    /*.section_one{
-        background-image: url("../img/depositphotos_319611122-stock-photo-cropped-close-up-photo-of.jpg");
-    }*/
+    #col_three{
+        padding-bottom: 10%;
+    }
+    footer{
+        height: 250px;
+        background-color: rgb(48, 12, 59);
+        width: 100%;
+        bottom: 0px;
+        margin-top: 50%;
+        /* position: fixed; */
+    }
+    h3{
+        font-size: 28px;
+    }
 }
 @media screen and (min-width: 900px) and (max-width: 1440px){ /*(escritorio medio)*/
     /*.section_one{
