@@ -136,7 +136,7 @@ label{
 }
 
 .form-control{
-    width: 40% !important;
+    width: 30% !important;/*40%*/
     border: none !important;
     outline: none !important;
     font-size: 15px;/*===========16*/
