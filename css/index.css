@@ -135,21 +135,22 @@ label{
     font-weight: 600;
 }
 
-.form-control{
-    width: 30% !important;/*40%*/
+/*.form-control{
+    width: 30% !important;/*40%
     border: none !important;
     outline: none !important;
-    font-size: 15px;/*===========16*/
+    font-size: 15px;
     color: rgb(44, 12, 42);
     font-weight: 600;
     margin-bottom: 1%;
     margin-top: 1%;
-    /*padding-left: 10px;
-    display: inline;*/
-}
+    padding-left: 10px;
+    display: inline;
+}*/
 
-option{
-    font-weight: 600;
+.form-control option{
+    color: rgb(44, 12, 42);
+    font-weight: 600 !important;
 }
 
 .btn{
@@ -169,6 +170,31 @@ option{
 }
 #submitFormulario{
     margin-top: 2%;
+}
+
+.pagina{
+	max-width: 930px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	grid-gap: 10px;/*100*/
+	padding: 15px;
+	margin: 0 auto;
+    font-size: 15px;
+}
+.formulario input{
+    color: rgb(44, 12, 42);
+    font-weight: 600;
+}
+.formulario{
+    
+}
+
+.out p{
+    text-align: left;
+    color: #fff;
+    font-weight: 600;
+    
 }
 
 /*==================FOOTER=======================*/
@@ -248,7 +274,7 @@ footer p{
 }
 /*=====================================================*/
 
-/*==================CSS DE TUTTY (MODAL)===============*/
+/*==================CSS DE TUTTY (MODAL)===============
 
 .nuevoevento-wrapper {
     position: absolute;    

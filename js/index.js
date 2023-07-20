@@ -27,6 +27,7 @@ if (user.tipo == 'paciente') {
             </nav>`
             document.querySelector('.section_one').innerHTML+=`
             <center>
+            <div class="pagina">
             <form id="formulario">
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Elegí tu especialista</label>
@@ -56,7 +57,7 @@ if (user.tipo == 'paciente') {
                 <label for="exampleFormControlTextarea1">Contanos un poco sobre tu consulta...</label>
                 <textarea class="form-control" id="DatosConsulta" rows="3"></textarea>
                 </div>
-                <button type="submit" id="submitFormulario" onclick="guardarTurno()" [disabled]="!form.form.valid">
+                <button type="submit" class="btn" id="submitFormulario" onclick="guardarTurno()" [disabled]="!form.form.valid">
                     Solicitar Turno!
                 </button>
             </form>
@@ -68,6 +69,7 @@ if (user.tipo == 'paciente') {
                 <p>Horario:</p>
                 <p>Consulta:</p>
                 </code>
+            </div>
             </div>
             </center>`
             document.querySelector('.section_three').innerHTML+=`
