@@ -44,27 +44,49 @@ DatosConsulta.addEventListener("change", e => {
 
 
 const submitFormulario = d.getElementById("submitFormulario");
-
+let turnos = []
+let turnosLocal = JSON.parse(window.localStorage.getItem("form"))
+if (turnosLocal == null) {
+	window.localStorage.setItem("form", JSON.stringify(turnos))
+}
 
 function guardarTurno() {
-
+	 
    let form = {};
 		form.Especialista = SelectEspecialista.value;
 		form.Fecha = SelectFecha.value;
 		form.Horario = SelectHorario.value;
 		form.DatosConsulta = DatosConsulta.value;
+		form.id = getIdPaciente("turno")
 
 	let	out = `
 	<p>Especialista: <span>${form.Especialista}</span></p>
 	<p>Fecha: <span>${form.Fecha}</span></p>
 	<p>Horario: <span>${form.Horario}</span></p>
 	<p>Consulta: <span>${form.DatosConsulta}</span></p>
+
 	`;
 
 	document.querySelector(".out code").innerHTML = out;
-localStorage.setItem("form" , JSON.stringify(form))
+	turnos.push(form);
+localStorage.setItem("form" , JSON.stringify(turnos))
 	
 }
+ window.addEventListener("load", ()=>{
+	let SelectEspecialista = document.getElementById("SelectEspecialista");
+	let UsersLocal = JSON.parse(window.localStorage.getItem("users"))
+	//undefined?
+	if ( UsersLocal== null) {
+		window.localStorage.setItem("users", JSON.stringify(Users))
+	} 
+	let especialistas = UsersLocal.filter((user)=>user.tipo == "especialista" )
+	if (especialistas.length != 0) {
+		especialistas.forEach(especialista => {
+			SelectEspecialista.innerHTML+=`<option>${especialista.name} - ${especialista.especialidad} </option>
+			`
+		});
+	}
+ })
 
 
 
