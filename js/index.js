@@ -26,43 +26,55 @@ if (user.tipo == 'paciente') {
                 </div>
             </nav>`
             document.querySelector('.section_one').innerHTML+=`
-            <center><form id="formulario">
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Elegí tu especialista</label>
-                        <select class="form-control" id="SelectEspecialista">
-                            <option value='Elige tu especialista' selected disabled hidden>Buscalo por nombre o especialidad</option>
-                            <option>Luis Navas - Full Stack</option>
-                            <option>Roberto Osores - Backend</option>
-                            <option>Damaris Palacios - Css</option>
-                            <option>Pablo Marino - React</option>
-                            <option>Manuel Ramirez - Python</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Elegí la fecha para tu consulta</label>
-                        <input type="date" class="form-control" id="SelectFecha">
-                        </input>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect2">Seleccioná un horario...</label>
-                        <select multiple class="form-control" id="SelectHorario">
-                            <option>10:00 - 12:00</option>
-                            <option>14:00 - 16:00</option>
-                            <option>16:00 - 18:00</option>
-                            <option>18:00 - 20:00</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Contanos un poco sobre tu consulta...</label>
-                        <textarea class="form-control" id="DatosConsulta" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn" id="submitFormulario" [disabled]="!form.form.valid">
-                        Solicitar Turno!
-                    </button>
-                </form></center>`
+            <center>
+            <div class="pagina">
+            <form id="formulario">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Elegí tu especialista</label>
+                    <select class="form-control" id="SelectEspecialista">
+                        <option value='Elige tu especialista' selected disabled hidden>Buscalo por nombre o especialidad</option>
+                        <option>Luis Navas - Full Stack</option>
+                        <option>Roberto Osores - Backend</option>
+                        <option>Damaris Palacios - Css</option>
+                        <option>Pablo Marino - React</option>
+                        <option>Manuel Ramirez - Python</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Elegí la fecha para tu consulta</label>
+                    <input type="date" class="form-control" id="SelectFecha"></input>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Seleccioná un horario...</label>
+                    <select multiple class="form-control" id="SelectHorario">
+                        <option>10:00 - 12:00</option>
+                        <option>14:00 - 16:00</option>
+                        <option>16:00 - 18:00</option>
+                        <option>18:00 - 20:00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1">Contanos un poco sobre tu consulta...</label>
+                <textarea class="form-control" id="DatosConsulta" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn" id="submitFormulario" onclick="guardarTurno()" [disabled]="!form.form.valid">
+                    Solicitar Turno!
+                </button>
+            </form>
+
+            <div class="out">
+                <code>
+                <p>Especialista:</p>
+                <p>fecha:</p>
+                <p>Horario:</p>
+                <p>Consulta:</p>
+                </code>
+            </div>
+            </div>
+            </center>`
             document.querySelector('.section_three').innerHTML+=`
             <article id="article_one">
-                <h2>¿Cómo funciona?</h2>
+                <h2 class="animate__slideInLeft">¿Cómo funciona?</h2>
                 <div class="container-fluid mt-5 text-center"><!--container-->
                     <div class="row row-cols-sm-1"><!--row-->
                     <div class="col-md-4 col-lg-4" id="col_one">
@@ -108,7 +120,7 @@ if (user.tipo == 'especialista') {
                 </div>
             </nav>`
             document.querySelector('.section_two').innerHTML+=`
-            <center><h2>Calendario</h2></center>
+            <center><h2 class="animate__slideInLeft">Calendario</h2></center>
             <div class="containerr">
                 <div class="izq">
                     <div class="calendario">
