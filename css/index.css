@@ -56,6 +56,15 @@ ul, li{
     height: 3%;
 }
 
+.animate__slideInLeft{
+    /*display: inline-block;
+    margin: 0 0.5rem;*/
+  
+    animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
 /*=========================================*/
 /*figure{
     width: 100%;
@@ -126,21 +135,22 @@ label{
     font-weight: 600;
 }
 
-.form-control{
-    width: 40% !important;
+/*.form-control{
+    width: 30% !important;/*40%
     border: none !important;
     outline: none !important;
-    font-size: 15px;/*===========16*/
+    font-size: 15px;
     color: rgb(44, 12, 42);
     font-weight: 600;
     margin-bottom: 1%;
     margin-top: 1%;
-    /*padding-left: 10px;
-    display: inline;*/
-}
+    padding-left: 10px;
+    display: inline;
+}*/
 
-option{
-    font-weight: 600;
+.form-control option{
+    color: rgb(44, 12, 42);
+    font-weight: 600 !important;
 }
 
 .btn{
@@ -160,6 +170,28 @@ option{
 }
 #submitFormulario{
     margin-top: 2%;
+}
+
+.pagina{
+	max-width: 930px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	grid-gap: 10px;/*100*/
+	padding: 15px;
+	margin: 0 auto;
+    font-size: 15px;
+}
+.formulario input{
+    color: rgb(44, 12, 42);
+    font-weight: 600;
+}
+
+.out p{
+    text-align: left;
+    color: #fff;
+    font-weight: 600;
+    
 }
 
 /*==================FOOTER=======================*/
@@ -239,7 +271,7 @@ footer p{
 }
 /*=====================================================*/
 
-/*==================CSS DE TUTTY (MODAL)===============*/
+/*==================CSS DE TUTTY (MODAL)===============
 
 .nuevoevento-wrapper {
     position: absolute;    
@@ -360,9 +392,17 @@ footer p{
 /*===================================================================================*/
 
 @media screen and (min-width: 360px) and (max-width: 640px){ /*(móvil pequeño)*/
-    /*.section_one{
-        
-    }*/
+    #col_three{
+        padding-bottom: 10%;
+    }
+    footer{
+        height: 250px;
+        background-color: rgb(48, 12, 59);
+        width: 100%;
+        bottom: 0px;
+        margin-top: 15%;
+        /* position: fixed; */
+    }
     .article_one{
         font-size: small !important;
     }
@@ -379,9 +419,20 @@ footer p{
     }*/
 }
 @media screen and (min-width: 375px) and (max-width: 667px){ /*(móvil medio)*/
-    /*.section_one{
-        background-image: url("../img/depositphotos_319611122-stock-photo-cropped-close-up-photo-of.jpg");
-    }*/
+    #col_three{
+        padding-bottom: 10%;
+    }
+    footer{
+        height: 250px;
+        background-color: rgb(48, 12, 59);
+        width: 100%;
+        bottom: 0px;
+        margin-top: 50%;
+        /* position: fixed; */
+    }
+    h3{
+        font-size: 28px;
+    }
 }
 @media screen and (min-width: 900px) and (max-width: 1440px){ /*(escritorio medio)*/
     /*.section_one{
