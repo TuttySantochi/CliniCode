@@ -26,88 +26,40 @@ if (user.tipo == 'paciente') {
                 </div>
             </nav>`
             document.querySelector('.section_one').innerHTML+=`
-            <center><div class="container mt-5"><div class="cover">
-      
-                <h1 class="search_tittle">Buscar por Especialista</h1>
-                <input type="text" id="formulario" class="form-control my-2 ">
-                <button class="btn btn-info mb-2" id="boton">Buscar</button>
-                <ul id="resultado">
-                </ul>
-                <!-- Boton para ver horarios -->
-
-            </div>
-
-            <div class="container mt-5">
-                
-                <h1 class="search_tittle">Buscar por Tema</h1>
-                <input type="text" id="formulario2" class="form-control my-2 ">
-                <button class="btn btn-info mb-2" id="boton2">Buscar</button>
-                <ul id="resultado2">
-                </ul>
-
-                <!-- Boton para ver horarios -->
-                <button type="button" id="botonHorarios" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Horarios
-                </button>
-
-            </div></div></center>
-            
-            
-            <!-- Modal horarios-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Estos son los turnos disponibles:</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <center><form id="formulario">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Elegí tu especialista</label>
+                        <select class="form-control" id="SelectEspecialista">
+                            <option value='Elige tu especialista' selected disabled hidden>Buscalo por nombre o especialidad</option>
+                            <option>Luis Navas - Full Stack</option>
+                            <option>Roberto Osores - Backend</option>
+                            <option>Damaris Palacios - Css</option>
+                            <option>Pablo Marino - React</option>
+                            <option>Manuel Ramirez - Python</option>
+                        </select>
                     </div>
-                    <div class="modal-body">
-                    <ul class="mostrarHorario"></ul>
-                    <!--<ul>
-                        <li>Lunes:</li>
-                        <li>Martes:</li>
-                        <li>Miercoles:</li>
-                        <li>Jueves:</li>
-                        <li>Viernes:</li>
-                        <li>Sábado:</li>
-                        <li>Domingo:</li>
-                    </ul>--> 
-                    
-                    <div class="nuevoevento-wrapper">
-                        <div class="nuevoevento-header">
-                        <div class="titulo">Solicitar Consulta</div>
-                        <i class="cerrar">X</i>
-                        </div>
-                        <div class="nuevoevento-body">
-                        <div class="nuevoevento-input">
-                            <input type="text" placeholder="título" class="nombreevento" />
-                        </div>
-                        <div class="nuevoevento-input">
-                            <input
-                            type="text"
-                            placeholder="Breve descripción"
-                            class="consultaevento"
-                            />
-                        </div>
-                        </div>
-                        <div class="nuevoevento-footer">
-                        <button class="nuevoevento-btn">Solicitar</button>
-                        </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Elegí la fecha para tu consulta</label>
+                        <input type="date" class="form-control" id="SelectFecha">
+                        </input>
                     </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Seleccioná un horario...</label>
+                        <select multiple class="form-control" id="SelectHorario">
+                            <option>10:00 - 12:00</option>
+                            <option>14:00 - 16:00</option>
+                            <option>16:00 - 18:00</option>
+                            <option>18:00 - 20:00</option>
+                        </select>
                     </div>
-                    <button class="nuevoevento">
-                    <i>+</i>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Contanos un poco sobre tu consulta...</label>
+                        <textarea class="form-control" id="DatosConsulta" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="submitFormulario" [disabled]="!form.form.valid">
+                        Solicitar Turno!
                     </button>
-                    </div>
-
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-                </div>
-            </div>`
+                </form></center>`
             document.querySelector('.section_three').innerHTML+=`
             <article id="article_one">
                 <h2>¿Cómo funciona?</h2>
