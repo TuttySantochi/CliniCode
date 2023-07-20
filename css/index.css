@@ -408,9 +408,17 @@ footer p{
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1366px){ /*(ordenador portátil medio)*/
-    /*.section_one{
-        background-image: url("../img/programmer-coding-in-the.jpg");
-    }*/
+    #col_three{
+        padding-bottom: 10%;
+    }
+    footer{
+        height: 250px;
+        background-color: rgb(48, 12, 59);
+        width: 100%;
+        bottom: 0px;
+        margin-top: 80% !important;
+        /* position: fixed; */
+    }
     
 }
 @media screen and (min-width: 1080px) and (max-width: 1920px){ /*(escritorio grande)*/
