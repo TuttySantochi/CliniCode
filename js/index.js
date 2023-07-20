@@ -72,7 +72,7 @@ if (user.tipo == 'paciente') {
             </center>`
             document.querySelector('.section_three').innerHTML+=`
             <article id="article_one">
-                <h2>¿Cómo funciona?</h2>
+                <h2 class="animate__slideInLeft">¿Cómo funciona?</h2>
                 <div class="container-fluid mt-5 text-center"><!--container-->
                     <div class="row row-cols-sm-1"><!--row-->
                     <div class="col-md-4 col-lg-4" id="col_one">
@@ -118,7 +118,7 @@ if (user.tipo == 'especialista') {
                 </div>
             </nav>`
             document.querySelector('.section_two').innerHTML+=`
-            <center><h2>Calendario</h2></center>
+            <center><h2 class="animate__slideInLeft">Calendario</h2></center>
             <div class="containerr">
                 <div class="izq">
                     <div class="calendario">
