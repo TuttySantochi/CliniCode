@@ -52,37 +52,26 @@ DatosConsulta.addEventListener("change", e => {
 const submitFormulario = d.getElementById("submitFormulario");
 
 function guardarTurno() {
-	
-	let SelectEspecialista = d.getElementById("SelectEspecialista").value;
-	let SelectFecha = d.getElementById("SelectFecha").value;
-	let SelectHorario = d.getElementById("SelectHorario").value;
-	let DatosConsulta = d.getElementById("DatosConsulta").value;
-   // let f = JSON.stringify(form);
+	// let f = JSON.stringify(form);
    // localStorage.setItem('form', f);
-   let form;  
-   if (localStorage.getItem('form') == null) {
-	form = [];
-} else {
-	//form = JSON.parse(localStorage.getItem("form"));
-}
-form.push({
-	SelectEspecialista: SelectEspecialista,
-	SelectFecha: SelectFecha,
-	SelectHorario: SelectHorario,
-	DatosConsulta: DatosConsulta
-});
+   let form = {};
+		form.Especialista = SelectEspecialista.value;
+		form.Fecha = SelectFecha.value;
+		form.Horario = SelectHorario.value;
+		form.DatosConsulta = DatosConsulta.value;
+  
 localStorage.setItem("form", JSON.stringify(form))
 	
 }
 
 submitFormulario.addEventListener('click', (e) => {
 	e.preventDefault();
-	
 	if(campos.Especialista && campos.Horario && campos.Fecha && campos.DatosConsulta){
 		guardarTurno();
 
 		formulario.reset();
-        Swal.fire('¡Su turno ha sido registrado con éxito!')
+        
+		Swal.fire('¡Su turno ha sido registrado con éxito!')
 
         campos.DatosConsulta= false;
         campos.Fecha = false;
@@ -92,7 +81,6 @@ submitFormulario.addEventListener('click', (e) => {
        
 	} else {
         Swal.fire('Asegurese de haber completado todos los campos.')
-        console.log("chau");
 	}
 
 });
