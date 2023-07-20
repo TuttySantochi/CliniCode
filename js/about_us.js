@@ -46,8 +46,8 @@ if (user.tipo == 'especialista') {
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link" href="../index.html">Inicio</a>
-                            <a class="nav-link" aria-current="page" href="#">Especialista</a>
-                            <a class="nav-link" href="#article_one">¿Cómo funciona?</a>
+                            <!--<a class="nav-link" aria-current="page" href="#">Especialista</a>
+                            <a class="nav-link" href="#article_one">¿Cómo funciona?</a>-->
                             <button type="button" class="btn btn-dark" id="logout">Cerrar Sesión</button>
                         </div>
                     </div>
