@@ -41,7 +41,7 @@
       <label for="exampleFormControlTextarea1">Contanos un poco sobre tu consulta...</label>
       <textarea class="form-control" id="DatosConsulta" rows="3"></textarea>
     </div>
-    <button type="submit" id="submitFormulario" [disabled]="!form.form.valid">
+    <button type="submit" id="submitFormulario" onclick="guardarTurno()" [disabled]="!form.form.valid">
         Solicitar Turno!
     </button>
   </form>
