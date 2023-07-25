@@ -64,10 +64,10 @@ if (user.tipo == 'paciente') {
 
             <div class="out">
                 <code>
-                <p>Especialista:</p>
-                <p>fecha:</p>
-                <p>Horario:</p>
-                <p>Consulta:</p>
+                <p class="texto_respuesta">Especialista:</p>
+                <p class="texto_respuesta">fecha:</p>
+                <p class="texto_respuesta">Horario:</p>
+                <p class="texto_respuesta">Consulta:</p>
                 </code>
             </div>
             </div>
@@ -171,9 +171,7 @@ if (user.tipo == 'administrador') {
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link" disabled>Especialista</a>
-                            <a class="nav-link" disabled>Paciente</a>
-                            <a class="nav-link" href="#article_one">¿Cómo funciona?</a>
+                            <a class="nav-link" disabled>Usuarios</a>
                             <a class="nav-link" href="paginas/about_us.html">Nosotras</a>
                             <button type="button" class="btn btn-dark" id="logout">Cerrar Sesión</button>
                         </div>
