@@ -117,7 +117,7 @@ h3{
     color: rgb(44, 10, 37);
 }
 
-p{
+.texto_footer{
     margin-top: 6%;
     margin-bottom: 10%;
     padding-left: 5%;
@@ -187,11 +187,10 @@ label{
     font-weight: 600;
 }
 
-.out{
+.out p{
     text-align: left;
     color: #fff;
-    font-weight: 600;
-    
+    font-weight: 500;  
 }
 
 /*==================FOOTER=======================*/
