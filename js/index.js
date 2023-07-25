@@ -72,6 +72,8 @@ if (user.tipo == 'paciente') {
             </div>
             </div>
             </center>`
+
+            
             document.querySelector('.section_three').innerHTML+=`
             <article id="article_one">
                 <h2 class="animate__slideInLeft">¿Cómo funciona?</h2>

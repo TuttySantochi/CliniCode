@@ -1,3 +1,6 @@
+
+
+
 const signupForm = document.querySelector('#signupForm')
 signupForm.addEventListener('submit', (e)=>{
     e.preventDefault()
@@ -6,6 +9,7 @@ signupForm.addEventListener('submit', (e)=>{
     const password = document.querySelector('#password').value
     const tipo = document.querySelector('#tipo').value
     const user = {name, email, password, tipo}
+
     /*window.localStorage.setItem('users', user)*/
     const Users = JSON.parse(localStorage.getItem('users')) || []
     const isUserRegistered = Users.find(user => user.email === email)

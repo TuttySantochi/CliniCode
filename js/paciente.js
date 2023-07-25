@@ -57,7 +57,6 @@ function guardarTurno() {
 		form.Fecha = SelectFecha.value;
 		form.Horario = SelectHorario.value;
 		form.DatosConsulta = DatosConsulta.value;
-		form.id = getIdPaciente("turno")
 
 	let	out = `
 	<p>Especialista: <span>${form.Especialista}</span></p>

@@ -26,13 +26,17 @@ const meses = [
 ];
 
 function iniciarcalendario() {
-    const primerDia = new Date(anio, mes, 1);
-    const ultimoDia = new Date(anio, mes + 1, 0);
-    const ultimoDiaAnt = new Date(anio, mes, 0);
-    const diasAnt = ultimoDiaAnt.getDate();
-    const ultimaFecha = ultimoDia.getDate();
-    const dia = primerDia.getDay();
-    const proxDias = 7 - ultimoDia.getDay() - 1;
+    if (user.tipo == 'especialista'){
+        const primerDia = new Date(anio, mes, 1);
+        const ultimoDia = new Date(anio, mes + 1, 0);
+        const ultimoDiaAnt = new Date(anio, mes, 0);
+        const diasAnt = ultimoDiaAnt.getDate();
+        const ultimaFecha = ultimoDia.getDate();
+        const dia = primerDia.getDay();
+        const proxDias = 7 - ultimoDia.getDay() - 1;
+    }
+    
+    
 
 //titulo del calendario
     date.innerHTML = meses[mes] + " " + anio;
