@@ -62,12 +62,12 @@ if (user.tipo == 'paciente') {
                 </button>
             </form>
 
-            <div class="out">
+            <div>
                 <code>
-                <p class="texto_respuesta">Especialista:</p>
-                <p class="texto_respuesta">Fecha:</p>
-                <p class="texto_respuesta">Horario:</p>
-                <p class="texto_respuesta">Consulta:</p>
+                <p class="out">Especialista:</p>
+                <p class="out">Fecha:</p>
+                <p class="out">Horario:</p>
+                <p class="out">Consulta:</p>
                 </code>
             </div>
             </div>
