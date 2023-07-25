@@ -103,7 +103,7 @@ if (user.tipo == 'paciente') {
 
 if (user.tipo == 'especialista') {
     document.querySelector('.menu').innerHTML=`
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4 navbar-dark">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-4 navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
                         <img src="img/820C2F9E-2657-457B-802B-7DECF5E826FB.PNG" class="img-fluid" alt="" id="logo">
