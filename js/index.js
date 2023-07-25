@@ -65,7 +65,7 @@ if (user.tipo == 'paciente') {
             <div class="out">
                 <code>
                 <p class="texto_respuesta">Especialista:</p>
-                <p class="texto_respuesta">fecha:</p>
+                <p class="texto_respuesta">Fecha:</p>
                 <p class="texto_respuesta">Horario:</p>
                 <p class="texto_respuesta">Consulta:</p>
                 </code>
