@@ -81,15 +81,15 @@ if (user.tipo == 'paciente') {
                     <div class="row row-cols-sm-1"><!--row-->
                     <div class="col-md-4 col-lg-4" id="col_one">
                         <img src="img/una.png" alt="icono" class="icons"> <h3>Busca</h3>
-                        <p>Busca tu programador por nombre, apellido o especialidad.</p>
+                        <p class="pasos">Busca tu programador por nombre, apellido o especialidad.</p>
                     </div>
                     <div class="col-md-4 col-lg-4" id="col_two">
                         <img src="img/dos.png" alt="icono" class="icons"> <h3>Selecciona</h3>
-                        <p>Selecciona el horario que quieras el turno y que más te convenga.</p>
+                        <p class="pasos">Selecciona el horario que quieras el turno y que más te convenga.</p>
                     </div>
                     <div class="col-md-4 col-lg-4" id="col_three">
                         <img src="img/tres.png" alt="icono" class="icons"> <h3>Reserva</h3>
-                        <p>Reserva tu turno de manera rápida y segura. </p>
+                        <p class="pasos">Reserva tu turno de manera rápida y segura. </p>
                     </div>
                     </div>
                 </div>

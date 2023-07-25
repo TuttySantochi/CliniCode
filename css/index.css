@@ -117,12 +117,17 @@ h3{
     color: rgb(44, 10, 37);
 }
 
-.texto_footer{
+p{
     margin-top: 6%;
     margin-bottom: 10%;
     padding-left: 5%;
     padding-right: 5%;
 }
+
+.pasos{
+    font-family: 'Poppins', sans-serif;
+}
+
 
 .icons, h3{
     display: inline !important;
@@ -190,7 +195,8 @@ label{
 .out p{
     text-align: left;
     color: #fff;
-    font-weight: 500;  
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*==================FOOTER=======================*/
